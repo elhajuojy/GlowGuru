@@ -12,6 +12,14 @@
     <h1>Hello world 11</h1>
     Hello world 11
     <!-- <img src="./assets/img1.png" alt=""> -->
+
+    <div class="form">
+        <form action="" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="_method" value="DELETE" >
+            <input type="text" name="name" id="" value="mehdi">   
+            <input type="submit" value="submit">
+        </form>
+    </div>
 </body>
 
 </html>

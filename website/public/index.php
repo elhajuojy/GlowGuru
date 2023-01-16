@@ -1,13 +1,14 @@
 <?php
 
-use Core\App;
-use Core\Database;
+use core\App;
+use core\Database;
 use Dotenv\Dotenv;
 
 
 session_start();
 
 const BASE_PATH = __DIR__ . '/../';
+
 require_once BASE_PATH . 'vendor/autoload.php';
 require_once BASE_PATH . 'functions.php';
 
@@ -37,6 +38,18 @@ $db = new Database($config['database']);
 // $App->setDatabase(dbConfig: $config['database']);
 
 
-//todo : build a router class
 
-echo "router here please";
+$router = new core\Router();
+
+$routes = require_once BASE_PATH . 'routes.php';
+
+$uri = parse_url($_SERVER['REQUEST_URI'])['path'];
+$method =  $_POST['_method'] ?? $_SERVER['REQUEST_METHOD'];
+
+// dd($uri);
+// dd($method);
+
+$router->route($uri, $method);
+// dd($router->routes);
+
+

@@ -20,7 +20,7 @@ function urlIs($value)
 
 
 
-function authorize($condition, $status = Response::FORBIDDEN)
+function authorize($condition, $status = Core\Response::FORBIDDEN)
 {
     if (! $condition) {
         abort($status);
@@ -48,7 +48,7 @@ function view($path, $attributes = [])
 {
     extract($attributes);
 
-    require base_path('views/' . $path);
+    require base_path('views/' . $path. '.php');
 }
 function hashPassword($value): string
 {
