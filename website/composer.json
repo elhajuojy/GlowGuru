@@ -1,0 +1,23 @@
+{
+  "name": "vendor_name/website",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "autoload": {
+    "psr-4": {
+      "\\": "./",
+      "Core\\": "Core/",
+      "Controller\\": "Controller/",
+      "Model\\": "Model/"
+
+    }
+  },
+  "authors": [
+    {
+      "name": "elhjuojy",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+  }
+}
