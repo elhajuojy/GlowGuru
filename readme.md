@@ -6,18 +6,18 @@ L'admin devra pouvoir gérer les produits cosmétiques (ajouter un nouveau, modi
 
 Install requirements:
 
-run this 
+run this
+
 ```bash
 > docker-compose up --build  
 ```
 
-after you run this command 
+after you run this command
 
 ```bash
 > cd website 
 > composer install 
 ```
-
 
 the project running on
 
@@ -32,3 +32,5 @@ php
 ```bash
 > http://localhost:9000/
 ```
+
+Do not forget to create your **.env** file and set your values check the config.php file
