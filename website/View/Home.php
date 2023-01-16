@@ -11,6 +11,7 @@
 <body>
     <h1>Hello world 11</h1>
     Hello world 11
+    <!-- <img src="./assets/img1.png" alt=""> -->
 </body>
 
 </html>
