@@ -1,5 +1,5 @@
 {
-  "name": "vendor_name/website",
+  "name": "glowguru/website",
   "description": "description",
   "minimum-stability": "stable",
   "license": "proprietary",
@@ -19,5 +19,7 @@
     }
   ],
   "require": {
+    "vlucas/phpdotenv": "^5.5",
+    "ext-pdo": "*"
   }
 }

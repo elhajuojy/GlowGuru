@@ -26,4 +26,4 @@ vendor
 /vendor/composer/autoload_files.php
 /vendor/composer/ClassLoader.php
 /vendor/composer/LICENSE
-/composer.lock
+/composer
