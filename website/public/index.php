@@ -19,7 +19,7 @@ $config = require_once BASE_PATH . 'config.php';
 
 
 
-// dd($config);
+dd($config);
 
 $App = App::getInstance($config);
 // dd($App);
