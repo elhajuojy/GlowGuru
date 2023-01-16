@@ -12,6 +12,14 @@ Install requirements:
 
 the project running on
 
+mysql
+
 ```bash
 > http://localhost:9001/
+```
+
+php
+
+```bash
+> http://localhost:9000/
 ```
