@@ -27,9 +27,11 @@ $App = App::getInstance($config);
 
 
 
-$db = new Database($config['database'], $_ENV['DB_USER'], $_ENV['DB_PASSWORD']);
+$db = new Database($config['database']);
 // dd($db);
 
+// $proudcts = $db->query('SELECT * FROM makeup_products')->statement->fetchAll();
+// dd($proudcts);
 
 
 // $App->setDatabase(dbConfig: $config['database']);
