@@ -1,6 +1,7 @@
 <?php
 
 use Core\App;
+use Core\Database;
 use Dotenv\Dotenv;
 
 
@@ -19,11 +20,15 @@ $config = require_once BASE_PATH . 'config.php';
 
 
 
-dd($config);
+// dd($config);
 
 $App = App::getInstance($config);
 // dd($App);
 
+
+
+$db = new Database($config['database'], $_ENV['DB_USER'], $_ENV['DB_PASSWORD']);
+// dd($db);
 
 
 
