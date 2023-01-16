@@ -18,15 +18,15 @@ class Router
     }
 
     public function get($uri, $controller){
-        $this->add($uri, $controller, 'get');
+        $this->add($uri, $controller, 'GET');
     }
 
     public function post($uri, $controller){
-        $this->add($uri, $controller, 'post');
+        $this->add($uri, $controller, 'POST');
     }
 
     public function put($uri, $controller){
-        $this->add($uri, $controller, 'put');
+        $this->add($uri, $controller, 'PUT');
     }
 
     public function delete($uri, $controller){
@@ -34,7 +34,7 @@ class Router
     }
 
     public function patch($uri, $controller){
-        $this->add($uri, $controller, 'patch');
+        $this->add($uri, $controller, 'PATCH');
     }
 
     public function route($uri, $method){
