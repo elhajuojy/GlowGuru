@@ -10,10 +10,8 @@ class App
     protected Router|null $router  = null;
 
 
-
-
-
-    public static function getInstance(): App {
+    public static function getInstance(): App
+    {
         // If we have no instance, create one.
         if (!self::$instance) {
             self::$instance = new static();
@@ -24,7 +22,7 @@ class App
         return self::$instance;
     }
 
-    protected function __construct() {}
-
-
+    protected function __construct()
+    {
+    }
 }
