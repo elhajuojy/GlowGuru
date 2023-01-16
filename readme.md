@@ -6,9 +6,18 @@ L'admin devra pouvoir gérer les produits cosmétiques (ajouter un nouveau, modi
 
 Install requirements:
 
+run this 
 ```bash
 > docker-compose up --build  
 ```
+
+after you run this command 
+
+```bash
+> cd website 
+> composer install 
+```
+
 
 the project running on
 
