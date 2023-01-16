@@ -1,3 +1,14 @@
-/env
-.idea
+
+/vander
+/vendor/
+/composer.lock
+/.idea
+/.gitignore
+/.gitattributes
+/.git
+/.env
+/node_modules
+/.hintrc
+/package-lock.json
 /mysql
+/website/composer.lock
