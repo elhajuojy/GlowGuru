@@ -4,6 +4,8 @@ L'application doit avoir un système d'authentification avec au moins un rôle (
 
 L'admin devra pouvoir gérer les produits cosmétiques (ajouter un nouveau, modifier les informations d'un produit existant, supprimer un produit).
 
+![glowGuru flowchart](https://user-images.githubusercontent.com/86893073/212770908-368249a1-c0b5-4956-8a19-a7e4b67d9bc9.png)
+
 Install requirements:
 
 run this
