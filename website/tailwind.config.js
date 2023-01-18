@@ -4,10 +4,13 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 const plugin  = require('tailwindcss/plugin');
 
 
+
 module.exports = {
   //dark mode is set to class so that we can use it in the html not to a local machine setting
   darkMode : "class",
-  content: ["./**/*.{html,js,ts,jsx,tsx,php}"],
+  content: ["./**/*.{html,js,ts,jsx,tsx,php}",
+  "./node_modules/flowbite/**/*.js"
+],
   theme: {
     extend: {
       colors: {
@@ -31,5 +34,7 @@ module.exports = {
     },
 
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }

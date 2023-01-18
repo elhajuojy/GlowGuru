@@ -8,7 +8,12 @@ use core\Database;
 session_start();
 
 const BASE_PATH = __DIR__ . '/../';
-const AppConsts  = base_path('Helpers\appConstants.php');
+
+const AppConsts  = [
+    "Appname"=>"GlowGuru 💄",
+    "AppDescription"=>"GlowGuru is a makeup store that sells makeup products",
+];
+
 require_once BASE_PATH . 'vendor/autoload.php';
 require_once BASE_PATH . 'functions.php';
 
@@ -27,7 +32,6 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 $method =  $_POST['_method'] ?? $_SERVER['REQUEST_METHOD'];
 
 $router->route($uri, $method);
-
 
 
 

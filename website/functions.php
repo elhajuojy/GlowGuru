@@ -36,7 +36,9 @@ function abort($code = 404) {
 
 function base_path($path)
 {
+    
     return BASE_PATH . $path;
+
 }
 
 function isLogedIn()

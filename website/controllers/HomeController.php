@@ -9,9 +9,7 @@ $products  = $db->query('SELECT * FROM makeup_products')->statement->fetchAll();
 
 
 
-// dd($products);
 
-view('Home', [
+view('home.view', [
     'title' => 'Home',
-    // 'products' => $products
 ]);
