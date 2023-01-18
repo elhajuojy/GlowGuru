@@ -27,3 +27,4 @@ vendor
 /vendor/composer/ClassLoader.php
 /vendor/composer/LICENSE
 /composer
+/yarn.lock
