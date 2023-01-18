@@ -46,14 +46,8 @@ function isLogedIn()
 
 function view($path, $attributes = [])
 {
-    $atr = $attributes ?? ["title" => "GlowGuru"];
-    $arrayAtr  = [
-        ...AppConsts,
-        ...$atr
-    ];
-    
-    extract($arrayAtr);
-
+    // dd($attributes);
+    extract($attributes);
     require base_path('views/' . $path. '.php');
 }
 function hashPassword($value): string
