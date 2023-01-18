@@ -17,6 +17,12 @@ function urlIs($value)
 
 
 
+function redirect($path)
+{
+    header("Location: {$path}");
+    die();
+}
+
 
 
 
@@ -65,6 +71,10 @@ function goToPage($page)
 }
 
 
+function isLogedInAdmin()
+{
+    return isset($_SESSION['admin']);
+}
 
 
 function verifyPassword($value, $hash): bool
