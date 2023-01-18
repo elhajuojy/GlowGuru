@@ -6,7 +6,9 @@
 ); ?>
 
 
-<main class="dashboard-container h-screen">
+<main class="dashboard-container h-screen flex">
     <?=Widget("BaseAdminAside")?>
-
+    <?=Widget("productsTable",[
+        'products' => $products
+    ])?>
 </main>
