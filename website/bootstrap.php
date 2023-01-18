@@ -3,7 +3,10 @@
 use core\App;
 use core\Container;
 use core\Database;
+use Dotenv\Dotenv;
 
+$dotenv = Dotenv::createUnsafeImmutable(BASE_PATH);
+$dotenv->safeload();
 
 $container = new Container();
 
