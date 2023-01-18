@@ -24,7 +24,7 @@ Run the project:
 
 ## Database diagram
 
-[![Database diagram](https://raw.githubusercontent.com/elhajuojy/GlowGuru/master/website/assets/db.png?token=GHSAT0AAAAAAB2VGJHGNNVZ6M7GF6TYULJ4Y6GMVXA)
+
 
 ## Technologies
 
