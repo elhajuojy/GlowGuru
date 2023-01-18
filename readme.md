@@ -6,6 +6,10 @@ L'admin devra pouvoir gérer les produits cosmétiques (ajouter un nouveau, modi
 
 ![glowGuru flowchart](https://user-images.githubusercontent.com/86893073/212770908-368249a1-c0b5-4956-8a19-a7e4b67d9bc9.png)
 
+## Database Digram 
+
+![Database](https://raw.githubusercontent.com/elhajuojy/GlowGuru/glowGuru_master/website/assets/db.png?token=GHSAT0AAAAAAB2VGJHHUAYVXZD5QFAV6GZAY6H4H7Q)
+
 Install requirements:
 
 run this
