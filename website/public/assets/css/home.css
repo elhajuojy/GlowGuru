@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.welcome {
+  background-image: url("https://images.unsplash.com/photo-1512207846876-bb54ef5056fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+}
+
+.welcome-content {
+  height: 100%;
+  width: 95%;
+  margin: auto;
+  display: grid;
+  place-content: center;
+  align-content: center;
+  gap: 1rem;
+}
+.welcome-content h1 {
+  font-size: 3.4rem;
+  color: white;
+  text-align: center;
+  font-family: "Abril Fatface", cursive;
+  max-width: 500px;
+}
+
+.products h1 {
+  color: black;
+  text-align: center;
+  font-family: "Abril Fatface", cursive;
+  display: grid;
+  gap: 20px;
+}
+.products .products-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  justify-items: center;
+  width: 95%;
+  margin: auto;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+.products .card-overview {
+  max-width: 320px;
+}
+.products img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.products .card-overview small {
+  color: var(--sl-color-neutral-500);
+}
+.products .card-overview [slot=footer] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}/*# sourceMappingURL=home.css.map */
