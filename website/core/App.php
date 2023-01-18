@@ -25,7 +25,6 @@ class App
     {
         static::$instance->container = $container;
     }
-
     public function getContainer(): Container
     {
         return static::$instance->container;
