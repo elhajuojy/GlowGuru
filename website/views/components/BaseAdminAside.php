@@ -1,5 +1,5 @@
-<aside class="w-64 h-screen" aria-label="Sidebar">
-    <div class="px-3 py-4 overflow-y-auto h-screen rounded bg-gray-200 shadow-orange-50 dark:bg-gray-800">
+<aside class="w-64 h-screen hidden md:block " aria-label="Sidebar">
+    <div class="px-3 py-4 overflow-y-auto rounded shadow-orange-50 dark:bg-gray-800">
         <a href="https://flowbite.com/" class="flex items-center pl-2.5 mb-5">
             <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-7" alt="Flowbite Logo" /> -->
             <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">GlowGuru </span>

@@ -1,0 +1,35 @@
+@import "all";
+
+:root{
+
+    --grid_num: 4;
+}
+
+// Path: public\assets\css\all.scss
+
+.dashboard{
+    .dashboard-header{
+        .dashboard-header-title{
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+    }
+    
+    
+}
+
+.activity-cards{
+    display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(var(--grid_num), 1fr);
+    gap: 1rem;
+    justify-content: center;
+    justify-items: center;
+}
+
+@media screen and (max-width: 768px){
+    :root{
+        --grid_num: 2;
+    }
+}
+    
