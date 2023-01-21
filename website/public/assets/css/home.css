@@ -6,12 +6,12 @@
 }
 
 ::-moz-selection { /* Code for Firefox */
-  color: blue;
+  color: black;
   background: yellow;
 }
 
 ::selection {
-  color: blue;
+  color: black;
   background: yellow;
 }
 

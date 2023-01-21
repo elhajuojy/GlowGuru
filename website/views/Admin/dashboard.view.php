@@ -32,16 +32,16 @@
         </header>
         <div class="activity-cards">
             <?= Widget('activityCard', [
-                'title' => 'Total sales',
-                'value' => '$456,22.1',
+                'title' => 'Total Products',
+                'value' => $totalProducts,
                 'icon' => 'fa-solid fa-shopping-bag',
                 'color' => 'bg-blue-500',
                 'iconColor' => 'text-blue-500',
                 'grow' => '+ 20,45 %'
             ]) ?>
             <?= Widget('activityCard', [
-                'title' => 'Visitors',
-                'value' => '632.22',
+                'title' => 'Worring Products',
+                'value' => $WorringProducts,
                 'icon' => 'fa-regular fa-user-plus',
                 'color' => 'bg-blue-500',
                 'iconColor' => 'text-blue-500',

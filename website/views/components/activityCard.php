@@ -1,6 +1,6 @@
-<div class="top-sales-card card w-44 border-2 rounded p-2 cursor-pointer  ">
+<div class="top-sales-card card w-52 p-5 border-2 border-red-300  rounded  cursor-pointer  ">
     <div class="top-card flex gap-4 justify-center items-center">
-        <div class="top-card-icon p-2 bg-blue-300 rounded-full w-10 grid justify-center">
+        <div class="top-card-icon p-2 bg-green-400 rounded-full w-10 grid justify-center">
             <span class="text-white "><i class="<?=$icon?>"></i></span>
         </div>
         <div class="top-card-text">
