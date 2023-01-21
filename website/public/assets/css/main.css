@@ -15,6 +15,14 @@
   background: yellow;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 body {
   background-color: gold;
 }/*# sourceMappingURL=main.css.map */

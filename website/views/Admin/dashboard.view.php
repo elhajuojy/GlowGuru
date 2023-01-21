@@ -15,7 +15,7 @@
             <h3 class="text-2xl opacity-90 font-semibold">Store Overview</h3>
             <div class="input-search hidden md:block ">
                 <span class="text-blue-500 mr-3"><i class="fa-solid fa-magnifying-glass"></i></span>
-                <input type="text" placeholder="Search" class="w-60 h-5 rounded-full focus:outline-none bg-gray-200 p-4">
+                <input type="text" name="search" placeholder="Search" class="w-60 h-5 rounded-full focus:outline-none bg-gray-200 p-4">
             </div>
             <div class="acitvity flex gap-4 justify-between items-center">
                 <span class="text-blue-500"><i class="fa-solid fa-envelope"></i></span>
@@ -69,3 +69,6 @@
         ]) ?>
     </main>
 </main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js" integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./../assets/js/search.js"></script>
