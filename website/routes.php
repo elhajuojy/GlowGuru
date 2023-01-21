@@ -20,3 +20,4 @@ $router->post('/product', 'Controllers\Admin\product\create.php');
 $router->delete('/product', 'Controllers\Admin\product\destory.php');
 
 
+$router->get('/productDetail', 'Controllers\product\showDetail.php');
