@@ -19,16 +19,17 @@
     </div>
     <div class="products">
         <div class="products-container">
-            <h1 class="text-6xl ">Products</h1>
+            <h1 class="text-6xl py-6 ">Products</h1>
             <div class="products-list">
                 <?php foreach ($products as $product) : ?>
                     <?=Widget("BaseCard", [
                         'img' => $product['product_image'],
                         'imgAlt' => $product['product_name'],
                         'title' => $product['product_name'],
+                        'id' => $product['product_id'],
                         'content' => $product['product_description'],
                         'smallDescription' => $product['brand'],
-                        'btnText' => 'Shop Now',
+                        'btnText' => 'See more ...',
                         'price' => $product['product_price']
                     ])?>
                 <?php endforeach; ?>
