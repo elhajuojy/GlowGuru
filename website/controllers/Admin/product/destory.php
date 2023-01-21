@@ -3,11 +3,11 @@
 use core\App;
 use core\Database;
 
-pos($_POST) ? $id = $_POST['id'] : $id = $_GET['id'];
+$id = $_POST['id'] ;
 
 
 
-App::resolve(Database::class)->query("DELETE FROM makeup_products WHERE product_id = :id",[
+App::resolve(Database::class)->query("DELETE FROM makeup_products WHERE id = :id",[
     'id' => $id
 ])->statement->execute();
 
