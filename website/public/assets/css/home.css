@@ -5,6 +5,16 @@
   padding: 0;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: blue;
+  background: yellow;
+}
+
+::selection {
+  color: blue;
+  background: yellow;
+}
+
 .welcome {
   background-image: url("https://images.unsplash.com/photo-1512207846876-bb54ef5056fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
   background-size: cover;
@@ -48,6 +58,7 @@
 }
 .products .card-overview {
   max-width: 320px;
+  min-width: 300px;
 }
 .products img {
   width: 100%;

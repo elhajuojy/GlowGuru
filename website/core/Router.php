@@ -36,6 +36,10 @@ class Router
     public function patch($uri, $controller){
         $this->add($uri, $controller, 'PATCH');
     }
+    
+    public function update($uri, $controller){
+        $this->add($uri, $controller, 'UPDATE');
+    }
 
     public function route($uri, $method){
         foreach($this->routes as $route){

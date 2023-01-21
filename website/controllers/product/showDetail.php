@@ -9,7 +9,7 @@ $id = get('id');
 $db = App::resolve(Database::class);
 
 
-$product = $db->query("SELECT * FROM makeup_products WHERE product_id = :id",[
+$product = $db->query("SELECT * FROM makeup_products WHERE id = :id",[
     'id' => $id
 ])->statement->fetch();
 

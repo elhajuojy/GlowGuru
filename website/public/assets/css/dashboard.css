@@ -5,6 +5,16 @@
   padding: 0;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: blue;
+  background: yellow;
+}
+
+::selection {
+  color: blue;
+  background: yellow;
+}
+
 :root {
   --grid_num: 4;
 }
