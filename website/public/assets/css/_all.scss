@@ -5,3 +5,12 @@
 @import 'fonts';
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
+::-moz-selection { /* Code for Firefox */
+  color: blue;
+  background: yellow;
+}
+
+::selection {
+  color: blue;
+  background: yellow;
+}
