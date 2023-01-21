@@ -1,4 +1,4 @@
--- Active: 1673891784861@@127.0.0.1@9001
+-- Active: 1673897391206@@127.0.0.1@3306@glowguru
 
 DROP DATABASE IF EXISTS glowguru;
 CREATE DATABASE glowguru;
@@ -28,7 +28,8 @@ VALUES
 
 drop TABLE IF EXISTS `makeup_products`;
 CREATE TABLE makeup_products (
-    product_id INT PRIMARY KEY ,
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    product_id INT ,
     product_name VARCHAR(255) NOT NULL,
     product_description TEXT NOT NULL,
     product_image VARCHAR(255) NOT NULL,
