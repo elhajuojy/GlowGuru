@@ -9,7 +9,7 @@
                     Product name
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    Color
+                    Product description
                 </th>
                 <th scope="col" class="px-6 py-3">
                     Category

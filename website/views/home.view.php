@@ -26,7 +26,7 @@
                         'img' => $product['product_image'],
                         'imgAlt' => $product['product_name'],
                         'title' => $product['product_name'],
-                        'id' => $product['product_id'],
+                        'id' => $product['id'],
                         'content' => $product['product_description'],
                         'smallDescription' => $product['brand'],
                         'btnText' => 'See more ...',

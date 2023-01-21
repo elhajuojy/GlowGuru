@@ -22,11 +22,11 @@
     </td>
     <td class="px-6 py-4">
         <div class="action">
-            <a href="/product?id=<?=$product['product_id']?>" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+            <a href="/product?id=<?=$product['id']?>" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
             <br>
             <form action="/product"  method="POST">
                 <input type="hidden" name="_method" value="DELETE" >
-                <input type="hidden" name="id" value="<?=$product['product_id']?>">
+                <input type="hidden" name="id" value="<?=$product['id']?>">
                 <button type="submit" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Delete</button>
             </form>
             <!-- <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Delete</a> -->
