@@ -12,3 +12,4 @@
 /package-lock.json
 /mysql
 /website/composer.lock
+.DS_Store

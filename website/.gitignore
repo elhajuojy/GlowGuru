@@ -28,3 +28,5 @@ vendor
 /vendor/composer/LICENSE
 /composer
 /yarn.lock
+/.DS_Store
+.DS_Store
