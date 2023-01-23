@@ -10,7 +10,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-
+    // dd(hashPassword($password));
     $db = App::resolve(Database::class);
     $admin = $db->query('SELECT * FROM admin WHERE email = :email', ['email' => $email])->statement->fetch();
     if($admin){
