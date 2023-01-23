@@ -20,10 +20,10 @@ create table admin (
     updated_at DATETIME NOT NULL
 );
 
-
+--NOTE: password is encrypted using bcrypt write admin password in plain text and then use bcrypt to encrypt it
 INSERT INTO admin (username, password, email, first_name, last_name, created_at, updated_at)
 VALUES
-    ('admin', 'admin', 'admin@gmail.com', 'elmahdi', 'elhjuojy', '2023-01-01', '2023-01-01');
+    ('admin', '$2y$10$eCm4NnGsmCRUqEk1emYgH.nR9ZMJyExOdv/DsxmqQxV1n4pOa8QIK', 'admin@gmail.com', 'elmahdi', 'elhjuojy', '2023-01-01', '2023-01-01');
 
 
 drop TABLE IF EXISTS `makeup_products`;
