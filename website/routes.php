@@ -11,6 +11,9 @@ $router->get('/admin/login', 'controllers/Admin/Login.php');
 $router->post('/admin/login', 'controllers/Admin/Login.php');
 $router->get('/admin/logout', 'controllers/Admin/Logout.php');
 
+$router->get('/searchProduct', 'controllers/Admin/product/searchProduct.php');
+
+
 
 
 $router->get('/admin/dashboard', 'Controllers/Admin/Dashboard.php');
