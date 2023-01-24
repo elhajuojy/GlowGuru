@@ -16,6 +16,8 @@ use core\Validator;
 $db = App::resolve(Database::class);
 
 
+
+
 if (array_key_exists('save_multiple_data', $_POST)) {
     for ($i = 0; $i < count($_POST['product_name']); $i++) {
         $name = $_POST['product_name'][$i];
@@ -26,13 +28,21 @@ if (array_key_exists('save_multiple_data', $_POST)) {
         $product_description = $_POST['product_description'][$i];
         $product_id = $_POST['product_id'][$i];
         $image_path = "";
+
+        $new_image_path = "";
+       
+
         //validate
         if (Validator::string($name) && Validator::string($cateogry) && Validator::string($product_brand) && Validator::string($product_price) && Validator::string($product_quantity) && Validator::string($product_description) && Validator::string($product_id)) {
             if (isset($_FILES['product_image'])) {
+                // dd($_FILES['product_image']);
                 $image = $_FILES['product_image'];
-                $image_dir = "assets/images/products/";
+                $image_dir = "./../assets/images/products/";
                 move_uploaded_file($image['tmp_name'][$i], $image_dir . $image['name'][$i]);
                 $image_path = $image_dir . $image['name'][$i];
+                
+            }else{
+                // $image_path = $old_image_path;
             }
             //insert into database
             $db->query("INSERT INTO makeup_products (product_name, product_category, brand, product_price,      product_quantity, product_image,product_id,product_description) VALUES (
@@ -43,7 +53,7 @@ if (array_key_exists('save_multiple_data', $_POST)) {
                 'brand' => $product_brand,
                 'price' => $product_price,
                 'quantity' => $product_quantity,
-                'image' => "./../".$image_path,
+                'image' => $image_path,
                 'id' => $product_id,
                 'description' => $product_description
             ]

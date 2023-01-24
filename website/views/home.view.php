@@ -36,9 +36,29 @@
             </div>
         </div>
     </div>
+    <div class="products">
+        <div class="products-container">
+            <h1 class="text-6xl py-6 ">Best Selling Products </h1>
+            <div class="products-list " id="search-container">
+                <?php foreach ($bestSellingProducts as $product) : ?>
+                    <?=Widget("BaseCard", [
+                        'img' => $product['product_image'],
+                        'imgAlt' => $product['product_name'],
+                        'title' => $product['product_name'],
+                        'id' => $product['id'],
+                        'content' => $product['product_description'],
+                        'smallDescription' => $product['brand'],
+                        'btnText' => 'See more ...',
+                        'price' => $product['product_price']
+                    ])?>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </div>
 </main>
 
 
 <?php view('partials/footer', [
-    'jsLinks' => '<script src="./assets/js/home.js"></script>'
+    'jsLinks' => '<script src="./assets/js/home.js"></script>
+    <script src="./assets/js/searchFilter.js"></script>'
 ]); ?>
