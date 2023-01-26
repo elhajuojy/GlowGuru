@@ -21,4 +21,5 @@ $container->bind('core\Database', function(){
 
 
 
+
 App::getInstance()->setContainer($container);

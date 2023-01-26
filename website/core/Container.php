@@ -5,7 +5,9 @@ namespace core;
 
 class Container{
     
-        public $bindings = [];
+        public $bindings = [
+            
+        ];
     
         public function bind($key, $value){
             $this->bindings[$key] = $value;
@@ -18,6 +20,5 @@ class Container{
 
             return call_user_func($this->bindings[$key]);
         }
-
 
 }

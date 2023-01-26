@@ -49,21 +49,29 @@
                 'grow' => '+ 9 %'
             ]) ?>
             <?= Widget('activityCard', [
-                'title' => 'Total orders',
-                'value' => '3,456.22',
+                'title' => 'Min Price',
+                'value' => $MinPrice,
                 'icon' => 'fa-solid fa-wallet',
                 'color' => 'bg-blue-500',
                 'iconColor' => 'text-blue-500',
                 'grow' => '+ 7,45 %'
             ]) ?>
             <?= Widget('activityCard', [
-                'title' => 'Refunded',
-                'value' => '503.22',
+                'title' => 'Avg Price',
+                'value' => $AVgPrice,
                 'icon' => 'fa-solid fa-arrow-rotate-left',
                 'color' => 'bg-blue-500',
                 'iconColor' => 'text-blue-500',
                 'grow' => '+ 4,3 %'
             ]) ?>
+            <!-- <?= Widget('activityCard', [
+                'title' => 'Max Price',
+                'value' => $MaxPrice,
+                'icon' => 'fa-solid fa-arrow-rotate-left',
+                'color' => 'bg-blue-500',
+                'iconColor' => 'text-blue-500',
+                'grow' => '+ 4,3 %'
+            ]) ?> -->
         </div>
         <?= Widget("productsTable", [
             'products' => $products

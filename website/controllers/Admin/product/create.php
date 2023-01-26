@@ -37,9 +37,9 @@ if (array_key_exists('save_multiple_data', $_POST)) {
             if (isset($_FILES['product_image'])) {
                 // dd($_FILES['product_image']);
                 $image = $_FILES['product_image'];
-                $image_dir = "./../assets/images/products/";
+                $image_dir = "./assets/images/products/";
                 move_uploaded_file($image['tmp_name'][$i], $image_dir . $image['name'][$i]);
-                $image_path = $image_dir . $image['name'][$i];
+                $image_path = './../'.$image_dir . $image['name'][$i];
                 
             }else{
                 // $image_path = $old_image_path;
