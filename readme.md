@@ -6,12 +6,13 @@ L'admin devra pouvoir gérer les produits cosmétiques (ajouter un nouveau, modi
 
 ![glowGuru flowchart](https://user-images.githubusercontent.com/86893073/212770908-368249a1-c0b5-4956-8a19-a7e4b67d9bc9.png)
 
-## Database Digram 
+Website Presenation 
 
-![Class_Diagram](https://user-images.githubusercontent.com/86893073/213885915-021a215d-be6d-4392-8c20-1b19313bed6c.jpg)
-
-![Use_Case](https://user-images.githubusercontent.com/86893073/213885913-a5bfac61-a8cd-4e5e-8a97-3ca4c2057416.jpg)
-
+![localhost_8000_ (1)](https://user-images.githubusercontent.com/86893073/214889652-83619c58-8017-4284-af72-fa0fcd456a7c.png)
+![localhost_8000_admin_dashboard (1)](https://user-images.githubusercontent.com/86893073/214889134-0d173073-10d2-4130-99a9-fdc54d8ba0d3.png)
+![localhost_8000_product_id=1](https://user-images.githubusercontent.com/86893073/214889129-58ccb709-56ef-4c23-816f-6aa8ed3b3032.png)
+![localhost_8000_product](https://user-images.githubusercontent.com/86893073/214889133-1dff788a-9dea-4524-adb9-548fcc0c641b.png)
+![localhost_8000_admin_login](https://user-images.githubusercontent.com/86893073/214889150-ed3d103b-1718-4c60-abbd-73c2ac9589fa.png)
 
 
 Install requirements:
